@@ -1,0 +1,270 @@
+.span_icon_wdp {
+    /* left: 20px; */
+    /* right: 20px; */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.exad-modal-button .exad-modal-image-action {
+    display: inline-block;
+    text-decoration: none;
+    transition: all .3s ease;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden
+}
+
+.exad-modal-button .exad-modal-image-action:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s ease;
+    transform-origin: center center
+}
+
+.exad-modal-button .exad-modal-image-action:hover:before {
+    transform: scale(1);
+    opacity: 1;
+    z-index: -1
+}
+
+.top-to-middle {
+    transform: translate(-50%, -60%);
+    transition: all .3s ease
+}
+
+.exad-modal-item.modal-vimeo.bottom-to-middle {
+    transform: translate(-50%, -30%);
+    transition: all .3s ease
+}
+
+.exad-modal-item.active.modal-vimeo.bottom-to-middle {
+    z-index: 9999;
+    transform: translate(-50%, -50%)
+}
+
+.exad-modal-item.modal-vimeo.right-to-middle {
+    transition: all .3s ease;
+    transform: translate(-30%, -50%)
+}
+
+.exad-modal-item.active.modal-vimeo.right-to-middle {
+    transform: translate(-50%, -50%);
+    z-index: 9999
+}
+
+.exad-modal-item.modal-vimeo.left-to-middle {
+    transform: translate(-70%, -50%);
+    transition: all .3s ease
+}
+
+.exad-modal-item.active.modal-vimeo.left-to-middle {
+    z-index: 9999;
+    transform: translate(-50%, -50%)
+}
+
+.exad-modal-item.modal-vimeo.zoom-in {
+    transform: translate(-50%, -50%) scale(.5);
+    transform-origin: center center;
+    transition: all .3s ease
+}
+
+.exad-modal-item.active.modal-vimeo.zoom-in {
+    z-index: 9999;
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.exad-modal-item.modal-vimeo.zoom-out {
+    transform: translate(-50%, -50%) scale(1.5);
+    transform-origin: center center;
+    transition: all .3s ease
+}
+
+.exad-modal-item.active.modal-vimeo.zoom-out {
+    z-index: 9999;
+    display: block;
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.exad-modal-item.modal-vimeo.left-rotate {
+    opacity: 0;
+    transition: all .8s ease;
+    perspective: 1000;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    transform-origin: center center
+}
+
+.exad-modal-item.active.modal-vimeo.left-rotate {
+    opacity: 1;
+    z-index: 9999;
+    transform: translate(-50%, -50%) rotateX(0)
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content .exad-close-btn {
+    width: 60px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: .65;
+    padding: 0 0 18px 10px;
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content .exad-close-btn span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content .exad-close-btn span:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    left: 50%
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content .exad-close-btn span:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    left: 50%
+}
+
+.exad-modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, .5);
+    transition: all .3s ease;
+    display: none
+}
+
+.exad-modal-overlay.active {
+    opacity: 1;
+    z-index: 1000;
+    display: block;
+    transition: all .3s ease
+}
+
+.exad-modal-item.image-gallery .exad-modal-element {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.exad-modal-item.image-gallery .exad-modal-element.column-one .exad-modal-element-card {
+    width: 100%
+}
+
+.exad-modal-item.image-gallery .exad-modal-element.column-two .exad-modal-element-card {
+    width: 50%
+}
+
+.exad-modal-item.image-gallery .exad-modal-element.column-three .exad-modal-element-card {
+    width: 33.33%
+}
+
+.exad-modal-item.image-gallery .exad-modal-element.column-four .exad-modal-element-card {
+    width: 25%
+}
+
+.exad-modal-item.image-gallery .exad-modal-element.column-five .exad-modal-element-card {
+    width: 20%
+}
+
+.exad-modal-item.image-gallery .exad-modal-element.column-six .exad-modal-element-card {
+    width: 16.66%
+}
+
+.exad-modal-item {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.exad-modal-item.modal-vimeo {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+    height: auto;
+    transition: all .3s ease;
+    visibility: hidden
+}
+
+@media (max-width:991px) {
+    .exad-modal-item.modal-vimeo {
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden
+    }
+    .exad-modal-item.modal-vimeo::-webkit-scrollbar {
+        display: none
+    }
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content .exad-modal-element img {
+    display: block;
+    width: 100%
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content .exad-modal-element .exad-modal-element-card .exad-modal-element-card-body p {
+    margin: 0
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content .exad-modal-element .exad-modal-element-card img {
+    display: block;
+    width: 100%
+}
+
+.exad-modal-item.modal-vimeo .exad-modal-content {
+    position: relative
+}
+
+.exad-modal-item .exad-modal-content .exad-modal-element iframe {
+    display: block;
+    height: 100%;
+    width: 100%
+}
+
+.exad-modal-item.active.modal-vimeo {
+    opacity: 1;
+    z-index: 2000;
+    transform: translate(-50%, -50%);
+    visibility: visible
+}
+
+.exad-modal-button.exad-modal-btn-fixed-width-yes .exad-modal-image-action {
+    position: relative
+}
+
+.exad-modal-button.exad-modal-btn-fixed-width-yes .exad-modal-image-action span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1
+}
+

@@ -1,0 +1,417 @@
+/* Default add-on styles. Please note that these might get overwritten by compiler */
+.ob-has-background-overlay > .elementor-widget-container {
+	position: relative; 
+}
+.ob-has-background-overlay > .elementor-widget-container:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+}
+.ob-has-background-overlay > .elementor-widget-container:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+}
+
+/* flex section */
+.ob-is-breaking-bad.elementor-top-section > .elementor-container > .elementor-row, 
+.ob-is-breaking-bad.elementor-inner-section > .elementor-container > .elementor-row, 
+.ob-is-breaking-bad.elementor-top-section > .elementor-container, 
+.ob-is-breaking-bad.elementor-inner-section > .elementor-container {
+	flex-wrap: wrap;
+}
+.ob-is-breaking-bad .elementor-background-overlay {
+	pointer-events: none;
+}
+
+/* GLIDER */
+.ob-is-glider .elementor-container > .elementor-row.swiper-wrapper, 
+.ob-is-glider .elementor-container > .swiper-wrapper {
+	flex-wrap: nowrap !important;
+}
+.ob-is-glider .elementor-container > .elementor-row.swiper-wrapper > .elementor-element.elementor-column, 
+.ob-is-glider .elementor-container > .swiper-wrapper > .elementor-element.elementor-column {
+	width: 100%;
+}
+.ob-is-glider .elementor-container.swiper-container-vertical > .elementor-row.swiper-wrapper > .swiper-slide, 
+.ob-is-glider .elementor-container.swiper-container-vertical > .swiper-wrapper > .swiper-slide {
+	width: 100% !important;
+}
+.ob-is-glider .swiper-slide a.elementor-button {
+	display: inline-block;
+}
+.ob-is-glider .swiper-button-prev, 
+.ob-is-glider .swiper-button-next {
+	z-index: 12;
+	transition: all 0.25s ease;
+}
+.ob-is-glider .swiper-button-prev {
+	background-image: none;
+}
+.ob-is-glider .swiper-button-next {
+	background-image: none;
+}
+*[class*="-gotoslide-"] {
+	cursor: pointer;
+}
+.ob-is-glider {
+	visibility: hidden;
+}
+
+/* TELEPORTER */
+.ob-is-teleporter .widget-wrap-children {
+	width: 100%;
+}
+.elementor-column.ob-is-teleporter .widget-wrap-children {
+	position: relative;
+}
+.elementor-column.ob-is-teleporter .elementor-widget-wrap, 
+.elementor-column.ob-is-teleporter .elementor-widget-wrap > .widget-wrap-children {
+	transition: all 0.25s ease; 
+}
+div[class*='ob-teleporter-'] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	opacity: 0;
+}
+
+.ob-tele-eff-fade {
+	transition: opacity 0.45s ease;
+}
+.ob-tele-eff-zoom {
+	transform: scale(1.2);
+	transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.1, 0, 0, 1);
+}
+.ob-tele-eff-stutter {
+	transform: scale(1.25);
+	transition: opacity 0.45s ease, transform 0.35s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.elementor-column.ob-is-teleporter > .ob-teleporter-hover.ob-tele-eff-zoom {
+	transform: scale(1.2);
+}
+.elementor-column.ob-is-teleporter > .ob-teleporter-hover.ob-tele-eff-stutter {
+	transform: scale(1.25);
+}
+
+.elementor-section.ob-tele-mom-hover .ob-teleporter-hover, 
+.elementor-container.ob-tele-mom-hover .ob-teleporter-hover,  
+.elementor-column.ob-is-teleporter .ob-teleporter-hover {
+	opacity: 1;
+	transform: scale(1);
+}
+.elementor-column.ob-is-teleporter > .ob-teleporter-hover {
+	opacity: 0;
+}
+.elementor-section div.ob-tele-overlay, 
+.elementor-container div.ob-tele-overlay {
+	width: 100%;
+	height: 100%;
+}
+.elementor-section.ob-tele-mom-hover:hover {
+	background-image: none !important;
+}
+[data-elementor-device-mode="tablet"] .elementor-column.ob-tele-no-tablet div[class*='ob-teleporter-'], 
+[data-elementor-device-mode="mobile"] .elementor-column.ob-tele-no-mobile div[class*='ob-teleporter-'] {
+	opacity: 1;
+	transform: scale(1);
+}
+.ob-chrome-resize, 
+.ob-chrome-resize .elementor-column-wrap, 
+.ob-chrome-resize.ob-is-e3 .elementor-widget-wrap { 
+	height: unset !important;
+	overflow: visible !important;
+}
+.ob-chrome-resize .elementor-widget-wrap, 
+.ob-chrome-resize.ob-is-e3 .elementor-widget-wrap > .widget-wrap-children {
+	height: fit-content;
+	top: unset !important;
+}
+
+.elementor-column-gap-no .ob-is-teleporter.elementor-element .elementor-widget-wrap .elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
+	margin-bottom: 0;
+}
+
+/* BUTTER BUTTON*/
+.ob-is-butterbutton .elementor-button-wrapper {
+	position: relative;
+	line-height: 0;
+	z-index: 1;
+}
+.ob-is-butterbutton .elementor-button-wrapper > .elementor-button {
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+}
+.ob-is-butterbutton .elementor-button-wrapper > .elementor-button:hover {
+	background-color: transparent;
+}
+.ob-is-butterbutton .elementor-button-wrapper > .elementor-button:before {
+	background-color: #000000;
+}
+.ob-is-butterbutton .elementor-button-wrapper > .elementor-button:after {
+	background-color: #F2F3F4;
+}
+.ob-is-butterbutton .elementor-button {
+	transition: box-shadow 0.25s ease, border-radius 0.25s ease, border-width 0.25s ease, border-color 0.25s ease;
+}
+.ob-is-butterbutton .elementor-button:before, 
+.ob-is-butterbutton .elementor-button:after {
+	transition: opacity 0.25s ease;
+}
+.ob-is-butterbutton .elementor-button .elementor-button-content-wrapper span {
+	transition: text-shadow 0.25s ease;
+}
+.ob-is-butterbutton .elementor-button .elementor-button-content-wrapper {
+	align-items: center;
+}
+.ob-is-butterbutton .elementor-button:before, 
+.ob-is-butterbutton .elementor-button:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+} 
+.ob-is-butterbutton .elementor-button:before {
+	z-index: -1;
+}
+.ob-is-butterbutton .elementor-button:after {
+	z-index: -2;
+	opacity: 0;
+}
+.ob-is-butterbutton .elementor-button:hover::before {
+	opacity: 0;
+}
+.ob-is-butterbutton .elementor-button:hover::after {
+	opacity: 1;
+}
+
+/* COMMENTZ */
+.ob-commentz #comments footer.comment-meta {
+	display: block;
+}
+.ob-commentz #comments b.fn {
+	margin-right: 5px;
+	font-weight: inherit;
+}
+.ob-commentz #comments span.says {
+	display: none;
+}
+.ob-commentz #comments ol.comment-list .children::before {
+	display: none;
+}
+.ob-commentz #comments .reply a.comment-reply-link {
+	transition: all 0.25s ease; 
+}
+.ob-commentz #comments .comment img.avatar, 
+.ob-commentz #comments .pingback img.avatar {
+	position: absolute;
+	float: inherit;
+}
+.ob-commentz #comments .comment .comment-body {
+	border-bottom: none;
+}
+.ob-commentz #comments #cancel-comment-reply-link {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: var(--e-global-typography-text-font-family);
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.2;
+}
+.ob-commentz #comments #reply-title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.ob-commentz #comments .nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.ob-commentz #comments ol #respond {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+/* image-box wrapper */
+.elementor-image-box-wrapper .elementor-image-box-img {
+	line-height: 0;
+}
+
+/* Hovernimator */
+.ob-is-hoveranimator .ob-is-hoveranimal > .elementor-widget-container {
+	transition-property: opacity, top, left, transform, filter;
+	position: relative;
+}
+
+/* Sticky Inner Section - Stay in Column */
+.elementor-widget-wrap.ob-sssic-wrapper {
+	display: block !important;
+}
+.elementor-inner-section.ob-is-sticky-inner-section {
+	top: 0;
+	position: sticky;
+}
+
+/* Kontrolz */
+[data-widget_type="image-carousel.default"] .elementor-swiper-button, 
+[data-widget_type="media-carousel.default"] .elementor-swiper-button { 
+	transition: all 0.25s ease;
+}
+
+/* icons line height fix */
+.elementor-widget-icon {
+	line-height: 0;
+}
+
+/* wooc */
+.button[class*='product_type'] {
+	transition: all 0.25s ease;
+}
+
+/* baseline grid */
+html.elementor-html {
+	position: relative;
+}
+html.elementor-html::before {
+	content: ""; 
+	position: absolute; 
+	top: 0; 
+	bottom: 0; 
+	width: 100%; 
+	z-index: 99999; 
+	pointer-events: none;
+}
+
+/* pseudo */
+.elementor-column.ob-is-pseudo .elementor-element-populated:before, 
+.elementor-column.ob-is-pseudo .elementor-element-populated:after {
+	content: '';
+	position: absolute; 
+	pointer-events: none;
+}
+[data-element_type="container"].ob-is-pseudo .ob-pseudo-before, 
+[data-element_type="container"].ob-is-pseudo .ob-pseudo-after {
+	position: absolute;
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100%; 
+	pointer-events: none; 
+	z-index: -1;
+} 
+
+/* ----------------- 1.8.2 IMAGES -------------------------- */
+.elementor-widget-image, 
+.elementor-widget-image > div, 
+.elementor-widget-image img {
+	line-height: 0;
+}
+/* ----------------- 1.8.2 SOCIAL ICONS -------------------------- */
+[data-widget_type="social-icons.default"] {
+	line-height: 0;
+}
+
+/* loco scrollbar */
+
+/* animations related to locomotive scroll */
+body:not(.elementor-editor-active) .c-scrollbar {
+	z-index: 99999;
+}
+/* FADe LEFT --------------- */
+body:not(.elementor-editor-active) .elementor-section.effect-fade-left, 
+body:not(.elementor-editor-active) .elementor-column.effect-fade-left, 
+body:not(.elementor-editor-active) [data-element_type="widget"].effect-fade-left .elementor-widget-container {
+	opacity: 0;
+	transition: left 1s cubic-bezier(.215, .61, .355, 1), opacity 1s cubic-bezier(.215, .61, .355, 1);
+	left: -30%;
+	transition-delay: 0.35s;
+	position: relative;
+}
+body:not(.elementor-editor-active) .fade-left.elementor-section.effect-fade-left, 
+body:not(.elementor-editor-active) .fade-left.elementor-column.effect-fade-left, 
+body:not(.elementor-editor-active) [data-element_type="widget"].fade-left.effect-fade-left .elementor-widget-container {
+	opacity: 1;
+	left: 0px;
+}
+/* -------------------------- */
+/* FADE RigHT --------------- */
+body:not(.elementor-editor-active) .elementor-section.effect-fade-right, 
+body:not(.elementor-editor-active) .elementor-column.effect-fade-right, 
+body:not(.elementor-editor-active) [data-element_type="widget"].effect-fade-right .elementor-widget-container {
+	opacity: 0;
+	transition: left 1s cubic-bezier(.215, .61, .355, 1), opacity 1s cubic-bezier(.215, .61, .355, 1);
+	left: 30%;
+	transition-delay: 0.35s;
+	position: relative;
+}
+body:not(.elementor-editor-active) .fade-right.elementor-section.effect-fade-right, 
+body:not(.elementor-editor-active) .fade-right.elementor-column.effect-fade-right, 
+body:not(.elementor-editor-active) [data-element_type="widget"].fade-right.effect-fade-right .elementor-widget-container {
+	opacity: 1;
+	left: 0px;
+}
+/* -------------------------- */
+/* FADE UP --------------- */
+body:not(.elementor-editor-active) .elementor-section.effect-fade-up, 
+body:not(.elementor-editor-active) .elementor-column.effect-fade-up, 
+body:not(.elementor-editor-active) [data-element_type="widget"].effect-fade-up .elementor-widget-container {
+	opacity: 0;
+	transition: top 1s cubic-bezier(.215, .61, .355, 1), opacity 1s cubic-bezier(.215, .61, .355, 1);
+	top: -10%;
+	transition-delay: 0.35s;
+	position: relative;
+}
+body:not(.elementor-editor-active) .fade-up.elementor-section.effect-fade-up, 
+body:not(.elementor-editor-active) .fade-up.elementor-column.effect-fade-up, 
+body:not(.elementor-editor-active) [data-element_type="widget"].fade-up.effect-fade-up .elementor-widget-container {
+	opacity: 1;
+	top: 0px;
+}
+/* -------------------------- */
+/* FADE DOWN --------------- */
+body:not(.elementor-editor-active) .elementor-section.effect-fade-down, 
+body:not(.elementor-editor-active) .elementor-column.effect-fade-down, 
+body:not(.elementor-editor-active) [data-element_type="widget"].effect-fade-down .elementor-widget-container {
+	opacity: 0;
+	transition: top 1s cubic-bezier(.215, .61, .355, 1), opacity 1s cubic-bezier(.215, .61, .355, 1);
+	top: 10%;
+	transition-delay: 0.35s;
+	position: relative;
+}
+body:not(.elementor-editor-active) .fade-down.elementor-section.effect-fade-down, 
+body:not(.elementor-editor-active) .fade-down.elementor-column.effect-fade-down, 
+body:not(.elementor-editor-active) [data-element_type="widget"].fade-down.effect-fade-down .elementor-widget-container {
+	opacity: 1;
+	top: 0;
+}
+/* -------------------------- */
+/* FADE --------------- */
+body:not(.elementor-editor-active) .elementor-section.effect-fade-in, 
+body:not(.elementor-editor-active) .elementor-column.effect-fade-in, 
+body:not(.elementor-editor-active) [data-element_type="widget"].effect-fade-in .elementor-widget-container {
+	opacity: 0;
+	transition: opacity 1s cubic-bezier(.215, .61, .355, 1);
+	transition-delay: 0.35s;
+}
+body:not(.elementor-editor-active) .fade-in.elementor-section.effect-fade-in, 
+body:not(.elementor-editor-active) .fade-in.elementor-column.effect-fade-in, 
+body:not(.elementor-editor-active) [data-element_type="widget"].fade-in.effect-fade-in .elementor-widget-container {
+	opacity: 1;
+}
+/* -------------------------- */
